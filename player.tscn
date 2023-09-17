@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5v7fpyhod5fu"]
+
+[ext_resource type="Texture2D" uid="uid://5rawp25bmwmj" path="res://PMgodotlearn.png" id="1_tojr1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_37h0v"]
+size = Vector2(9.80001, 27.8)
+
+[node name="Player" type="Sprite2D"]
+position = Vector2(87, 83)
+scale = Vector2(5, 5)
+texture = ExtResource("1_tojr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.300003, 2.3)
+shape = SubResource("RectangleShape2D_37h0v")
